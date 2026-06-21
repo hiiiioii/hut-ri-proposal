@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Kegiatan HUT RI Ke-81 - Dusun Jatirowo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #e63946;
+            --primary-dark: #1d3557;
+            --light-bg: #f8f9fa;
+            --text-color: #2b2d42;
+            --border-color: #e5e5e5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-color);
+            background-color: #f1f3f5;
+            line-height: 1.6;
+        }
+
+        /* Layout Container */
+        .wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 280px;
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            padding: 30px 20px;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .sidebar-brand {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255,255,255,0.1);
+            padding-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .sidebar-menu {
+            list-style: none;
+        }
+
+        .sidebar-menu li {
+            margin-bottom: 8px;
+        }
+
+        .sidebar-menu a {
+            color: #adbfc7;
+            text-decoration: none;
+            display: block;
+            padding: 12px 15px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-menu a:hover, .sidebar-menu a.active {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            padding: 40px;
+            max-width: 1000px;
+        }
+
+        /* Sections Styling */
+        .content-section {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        h2 {
+            font-size: 24px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 15px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-dark);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--light-bg);
+        }
+
+        .text-center { text-align: center; }
+        .text-right { text-align: right; }
+        .bold { font-weight: bold; }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        .danger-box {
+            background-color: #f8d7da;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+            font-weight: 600;
+            color: #721c24;
+        }
+
+        /* Hero / Cover Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #b31924 100%);
+            color: white;
+            padding: 60px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            color: white;
+            border: none;
+            padding: 0;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        /* Signature Row */
+        .signature-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .signature-box {
+            text-align: center;
+            width: 45%;
+            min-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .space-ttd {
+            height: 80px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                position: relative;
+                padding: 20px;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+            .signature-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <nav class="sidebar">
+            <div class="sidebar-brand">HUT RI Ke-81</div>
+            <ul class="sidebar-menu">
+                <li><a href="#beranda" class="active">Beranda & Cover</a></li>
+                <li><a href="#permohonan">Surat Permohonan</a></li>
+                <li><a href="#pengantar">Kata Pengantar</a></li>
+                <li><a href="#latar-belakang">Latar Belakang</a></li>
+                <li><a href="#tujuan">Tujuan Acara</a></li>
+                <li><a href="#profil">Profil Organisasi</a></li>
+                <li><a href="#panitia">Susunan Panitia</a></li>
+                <li><a href="#agenda">Agenda & Jadwal</a></li>
+                <li><a href="#anggaran">Rencana Anggaran (RAB)</a></li>
+                <li><a href="#sponsorship">Paket Sponsorship</a></li>
+                <li><a href="#ketentuan">Ketentuan & Penutup</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            
+            <section id="beranda" class="content-section hero">
+                <h1>PROPOSAL KEGIATAN & PERMOHONAN DANA</h1>
+                <p class="text-center bold" style="font-size: 16px; color: rgba(255,255,255,0.9);">
+                    PERINGATAN HARI ULANG TAHUN KEMERDEKAAN REPUBLIK INDONESIA KE-81 TAHUN 2026
+                </p>
+                <div style="margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 20px;">
+                    <p class="text-center bold" style="margin: 0; font-size: 14px;">Disusun Oleh:</p>
+                    <p class="text-center" style="margin: 0; font-weight: 600;">Panitia Pelaksana Dusun Jatirowo, Desa Jatigedong</p>
+                    <p class="text-center" style="margin: 0;">Kecamatan Ploso, Kabupaten Jombang</p>
+                </div>
+            </section>
+
+            <section id="permohonan" class="content-section">
+                <h2>Surat Permohonan Dana</h2>
+                <table style="border: none; margin: 0 0 20px 0;">
+                    <tr style="background: none;"><td style="width: 15%; border: none; padding: 4px 0;">Nomor</td><td style="width: 2%; border: none; padding: 4px 0;">:</td><td style="border: none; padding: 4px 0;">008/Pan.HUT-RI/VII/2025</td></tr>
+                    <tr style="background: none;"><td style="border: none; padding: 4px 0;">Lampiran</td><td style="border: none; padding: 4px 0;">:</td><td style="border: none; padding: 4px 0;">1 (satu) Berkas Proposal</td></tr>
+                    <tr style="background: none;"><td style="border: none; padding: 4px 0;">Perihal</td><td style="border: none; padding: 4px 0;">:</td><td style="border: none; padding: 4px 0;" class="bold">Permohonan Bantuan Dana</td></tr>
+                </table>
+                <p style="text-align: right;" class="bold">Jombang, 19 Juni 2026</p>
+                <p>Kepada Yth.<br><span class="bold">Bapak/Ibu/Saudara/i Calon Donatur / Sponsor</span><br>di Tempat</p>
+                <p class="bold">Dengan hormat,</p>
+                <p>Dalam rangka memperingati Hari Ulang Tahun (HUT) Kemerdekaan Republik Indonesia ke-81 Tahun, kami segenap masyarakat dan pemuda Dusun Jatirowo akan mengadakan rangkaian kegiatan peringatan yang puncaknya dilaksanakan pada tanggal 17 Agustus 2026 di Dusun Jatirowo, Desa Jatigedong, Kec. Ploso, Kab. Jombang.</p>
+                <p>Adapun total alokasi dana yang diperlukan untuk pelaksanaan seluruh rangkaian kegiatan tersebut adalah sebesar <strong>Rp 16.647.000 (Enam Belas Juta Enam Ratus Empat Puluh Tujuh Ribu Rupiah)</strong> dengan rincian anggaran biaya sebagaimana terlampir dalam proposal ini.</p>
+                <p>Mengingat besarnya biaya yang dibutuhkan demi suksesnya acara tersebut, bersama ini kami memohon partisipasi serta keikhlasan Bapak/Ibu/Saudara/i berupa bantuan dana atau sponsorship guna mendukung kelancaran dan terlaksananya kegiatan ini.</p>
+                <p>Demikian surat permohonan ini kami sampaikan. Atas perhatian, partisipasi, dan bantuan yang Bapak/Ibu/Saudara/i berikan, kami mengucapkan terima kasih yang sebesar-besarnya.</p>
+                
+                <div class="signature-row">
+                    <div class="signature-box">
+                        <p>Mengetahui,<br>Kepala Dusun Jatirowo</p>
+                        <div class="space-ttd"></div>
+                        <p class="bold">Bpk. Muhammad Sa'i</p>
+                    </div>
+                    <div class="signature-box">
+                        <p>Hormat Kami,<br>Ketua Forum Remaja Jatirowo</p>
+                        <div class="space-ttd"></div>
+                        <p class="bold">Rama Dheva</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="pengantar" class="content-section">
+                <h2>Kata Pengantar</h2>
+                <p>Puji syukur kami panjatkan ke hadirat Allah SWT atas segala rahmat dan karunia-Nya sehingga proposal kegiatan ini dapat tersusun dengan baik. Proposal ini kami buat sebagai gambaran serta bentuk perencanaan kegiatan yang akan dilaksanakan oleh Forum Remaja Jatirowo dalam rangka mempererat tali silaturahmi, meningkatkan kebersamaan, dan mendukung berbagai kegiatan sosial kemasyarakatan.</p>
+                <p>Melalui proposal ini, kami berharap dapat menjalin kerja sama yang baik dengan berbagai pihak untuk mendukung terlaksananya kegiatan yang bermanfaat bagi masyarakat. Dukungan yang diberikan, baik berupa dana, barang, maupun bentuk bantuan lainnya, akan sangat berarti bagi kesuksesan kegiatan yang kami selenggarakan.</p>
+                <p>Kami menyadari bahwa proposal ini masih memiliki kekurangan. Oleh karena itu, kami mengharapkan kritik dan saran yang membangun demi perbaikan di masa mendatang. Atas perhatian, dukungan, dan kerja sama yang diberikan, kami ucapkan terima kasih.</p>
+                <p class="text-right bold">Wassalamu'alaikum Wr. Wb.</p>
+                <p class="text-right bold" style="margin-top: 10px;">Forum Remaja Jatirowo</p>
+            </section>
+
+            <section id="latar-belakang" class="content-section">
+                <h2>Latar Belakang</h2>
+                <p>Hari Ulang Tahun Kemerdekaan Republik Indonesia merupakan momen sakral untuk mengenang kembali jasa-jasa para pahlawan yang telah gugur mendahului kita, serta sebagai media vital guna menumbuhkan kembali semangat nasionalisme, persatuan, kesatuan, dan gotong royong di tengah-tengah lapisan masyarakat.</p>
+                <p>Peringatan HUT ke-81 Kemerdekaan Republik Indonesia tahun 2026 ini menjadi sarana emas untuk mempererat tali silaturahmi kebersamaan serta meningkatkan rasa cinta tanah air yang mendalam, khususnya bagi generasi muda sebagai pilar penerus bangsa. Melalui Forum Remaja Jatirowo (FRJ), kami berkomitmen aktif menghidupkan lingkungan yang harmonis, kreatif, dan kolaboratif.</p>
+                <p>Untuk memeriahkan peringatan tersebut, kami berinisiatif menyelenggarakan berbagai agenda positif mulai dari upacara bendera, jalan sehat bersama, perlombaan edukatif dan ketangkasan warga, hingga panggung pentas seni malam puncak.</p>
+            </section>
+
+            <section id="tujuan" class="content-section">
+                <h2>Tujuan Acara</h2>
+                <ol>
+                    <li>Menumbuhkan rasa cinta tanah air dan semangat nasionalisme yang tinggi di kalangan masyarakat, khususnya generasi muda Dusun Jatirowo.</li>
+                    <li>Mengenang dan menghormati jasa para pahlawan bangsa yang telah berjuang meraih kemerdekaan Indonesia.</li>
+                    <li>Mempererat tali silaturahmi, persatuan, kesatuan, dan rasa kekeluargaan antarwarga di lingkungan Dusun Jatirowo.</li>
+                    <li>Meningkatkan semangat gotong royong, sportivitas, dan kerja sama tim yang solid melalui berbagai perlombaan dan kegiatan yang diselenggarakan.</li>
+                    <li>Menyediakan wadah positif bagi masyarakat untuk berpartisipasi aktif dalam memeriahkan Hari Kemerdekaan Republik Indonesia.</li>
+                    <li>Menciptakan suasana lingkungan yang meriah, positif, edukatif, dan penuh kebersamaan rukun tetangga warga.</li>
+                </ol>
+            </section>
+
+            <section id="profil" class="content-section">
+                <h2>Who We Are (Profil Organisasi)</h2>
+                <p>Forum Remaja Jatirowo (FRJ) merupakan wadah organisasi kepemudaan dan komunitas remaja resmi yang beranggotakan pemuda-pemudi di wilayah Dusun Jatirowo, Desa Jatigedong, Kecamatan Ploso, Kabupaten Jombang. FRJ hadir sebagai motor penggerak kebersamaan warga, tempat pengembangan potensi bakat kepemudaan, serta penanaman kepedulian sosial lingkungan.</p>
+                <p>Kami aktif berkontribusi nyata dalam agenda sosial kemasyarakatan dusun, seperti peringatan HUT Proklamasi RI, perayaan keagamaan (Hari Raya Idul Fitri, Isra' Mi'raj), kerja bakti bersih lingkungan, serta pendampingan aktivitas kepemudaan kreatif lainnya.</p>
+                <div class="highlight-box text-center">
+                    Ikuti Aktivitas Kami di Instagram Resmi: <a href="https://instagram.com/forumremaja_Jatirowo" target="_blank" style="color: var(--primary-dark); font-weight: bold; text-decoration: underline;">@forumremaja_Jatirowo</a>
+                </div>
+            </section>
+
+            <section id="panitia" class="content-section">
+                <h2>Susunan Panitia Pelaksana</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jabatan / Struktur</th>
+                            <th>Nama Anggota Pelaksana</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="bold">Ketua Panitia</td><td>Rama Dheva</td></tr>
+                        <tr><td class="bold">Sekretaris</td><td>Syifa' Nurul Q.A / Billa</td></tr>
+                        <tr><td class="bold">Koordinator Acara Utama</td><td>Azizah</td></tr>
+                        <tr><td class="bold">Koordinator Lapangan & Lomba</td><td>Khoirunnisa</td></tr>
+                        <tr><td class="bold">Tim Pendanaan & Sponsorship</td><td>Syifa, Dina, Vino, Shirot</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="agenda" class="content-section">
+                <h2>Agenda Kegiatan & Jadwal Pelaksanaan</h2>
+                
+                <h3>1. UPACARA BENDERA LOKAL</h3>
+                <p>Upacara bendera formal yang diikuti oleh jajaran pamong dusun, tokoh masyarakat, pemuda, dan segenap warga sebagai pembuka hari kemerdekaan.</p>
+                <ul>
+                    <li><strong>Lokasi:</strong> Lapangan Gerdu Mburi Jatirowo</li>
+                    <li><strong>Waktu:</strong> Pukul 06.30 WIB - Selesai, Senin 17 Agustus 2026</li>
+                </ul>
+
+                <h3>2. LOMBA ANAK-ANAK DAN IBU-IBU</h3>
+                <p>Serangkaian lomba hiburan rakyat yang seru untuk meningkatkan sportivitas, tawa kebersamaan, dan interaksi rukun warga.</p>
+                <ul>
+                    <li><strong>Lokasi:</strong> Halaman Gerdu Mburi Jatirowo</li>
+                    <li><strong>Waktu:</strong> Pukul 19.00 WIB - Selesai, 7 s/d 10 Agustus 2026</li>
+                </ul>
+
+                <h3>3. PANGGUNG PENTAS SENI (MALAM PUNCAK)</h3>
+                <p>Ajang kreasi seni warga mulai dari tari tradisional, paduan suara kemerdekaan, hingga pembagian piala kejutan pemenang lomba.</p>
+                <ul>
+                    <li><strong>Lokasi:</strong> Area Panggung Gerdu Mburi Jatirowo</li>
+                    <li><strong>Waktu:</strong> Pukul 18.00 WIB - Selesai, Sabtu 22 Agustus 2026</li>
+                </ul>
+
+                <h3>4. JALAN SEHAT & UNDIAN DOORPRIZE</h3>
+                <p>Kegiatan olahraga santai keluarga mengitari rute lingkungan desa disusul pengundian ratusan kupon doorprize menarik.</p>
+                <ul>
+                    <li><strong>Lokasi:</strong> Titik Kumpul Gerdu Mburi Jatirowo</li>
+                    <li><strong>Waktu:</strong> Pukul 06.30 WIB - Selesai, Minggu 23 Agustus 2026</li>
+                </ul>
+
+                <h3>Sasaran Peserta</h3>
+                <p>Seluruh rangkaian kegiatan perayaan kemerdekaan ini ditujukan kepada seluruh lapisan warga masyarakat lintas generasi Dusun Jatirowo tanpa terkecuali, mulai dari balita, anak-anak sekolah, remaja, kelompok ibu-ibu, hingga jajaran sesepuh dusun.</p>
+            </section>
+
+            <section id="anggaran" class="content-section">
+                <h2>Rencana Anggaran Biaya (RAB)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-center" style="width: 10%;">No</th>
+                            <th>Uraian Alokasi Keperluan Anggaran</th>
+                            <th class="text-right" style="width: 30%;">Biaya Estimasi (Rp)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="text-center">1</td><td>Alokasi Hadiah Utama & Perlombaan</td><td class="text-right">2.500.000</td></tr>
+                        <tr><td class="text-center">2</td><td>Pengadaan Alat & Bahan Perlombaan</td><td class="text-right">1.000.000</td></tr>
+                        <tr><td class="text-center">3</td><td>Penyewaan Sound System & Hiburan Musik Jalan Sehat</td><td class="text-right">2.000.000</td></tr>
+                        <tr><td class="text-center">4</td><td>Pengadaan Aneka Doorprize Utama Kegiatan Jalan Sehat</td><td class="text-right">8.000.000</td></tr>
+                        <tr><td class="text-center">5</td><td>Biaya Operasional Logistik & Transportasi Armada</td><td class="text-right">500.000</td></tr>
+                        <tr><td class="text-center">6</td><td>Cetak Atribut ID Card Lanyard Kepanitiaan</td><td class="text-right">600.000</td></tr>
+                        <tr><td class="text-center">7</td><td>Konsumsi Rapat & Lapangan Panitia Pelaksana</td><td class="text-right">1.000.000</td></tr>
+                        <tr><td class="text-center">8</td><td>Pengadaan Cetak Banner & Background Photobooth</td><td class="text-right">47.000</td></tr>
+                        <tr class="bold" style="background-color: #e5e5e5;">
+                            <td colspan="2" class="text-right">TOTAL RENCANA PENGELUARAN (A)</td>
+                            <td class="text-right">16.647.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Sumber Pendanaan Pendukung</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="text-center" style="width: 10%;">No</th>
+                            <th>Deskripsi Sumber Kas Masuk</th>
+                            <th class="text-right" style="width: 30%;">Nominal (Rp)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="text-center">1</td><td>Alokasi Kas Internal Forum Remaja Jatirowo</td><td class="text-right">500.000</td></tr>
+                        <tr class="bold" style="background-color: #f1f3f5;">
+                            <td colspan="2" class="text-right">TOTAL DANA MANDIRI TERSEDIA (B)</td>
+                            <td class="text-right">500.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="danger-box text-center">
+                    TOTAL KEKURANGAN ALOKASI DANA YANG DIAJUKAN (A - B): Rp 15.147.000
+                </div>
+            </section>
+
+            <section id="sponsorship" class="content-section">
+                <h2>Paket Kemitraan & Sponsorship</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Nama Paket</th>
+                            <th style="width: 50%;">Kontribusi Balik (Benefit Kontributor)</th>
+                            <th style="width: 25%;">Ket. Nominal Paket</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="bold" style="color: #cd7f32;">PAKET BRONZE</td>
+                            <td>1. Penayangan 3 Video Konten Promosi Khusus di IG FRJ<br>2. Penyematan Tag akun usaha di tiap feed panitia<br>3. Pemasangan Logo Usaha ukuran Max di media cetak strategis<br>4. Penyebutan nama usaha oleh MC saat Opening & Closing utama</td>
+                            <td class="bold text-right">Rp 350.000<br><span style="font-size: 11px; font-weight: normal; color: #555;">(Tunai / Produk)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bold" style="color: #7a7a7a;">PAKET SILVER</td>
+                            <td>1. Penayangan 2 Video Teaser Promosi di IG Resmi<br>2. Pemasangan Logo Usaha pada Banner Utama Kegiatan<br>3. Penyebutan nama brand usaha secara berkala oleh MC Acara</td>
+                            <td class="bold text-right">Rp 200.000<br><span style="font-size: 11px; font-weight: normal; color: #555;">(Tunai / Produk)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bold" style="color: #d4af37;">PAKET GOLD</td>
+                            <td>1. Penayangan 1 Video Promosi singkat di IG Reels FRJ<br>2. Pencantuman Logo Usaha pendukung di baris banner acara</td>
+                            <td class="bold text-right">Rp 150.000<br><span style="font-size: 11px; font-weight: normal; color: #555;">(Tunai / Produk)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bold" style="color: #4a5d6e;">PAKET PLATINUM</td>
+                            <td>1. Pencantuman Logo identitas usaha pendukung di area banner pelengkap sebagai tanda partisipasi resmi warga</td>
+                            <td class="bold text-right">Rp 100.000<br><span style="font-size: 11px; font-weight: normal; color: #555;">(Tunai / Produk)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="ketentuan" class="content-section">
+                <h2>Ketentuan Mitra Sponsor & Penutup</h2>
+                <ol>
+                    <li>Sponsor resmi merupakan pihak swasta, instansi, maupun perorangan yang secara sah setuju memberikan bantuan dana, barang, atau fasilitas.</li>
+                    <li>Setiap kontraktor sponsor mutlak berhak menuntut hak benefit sesuai jenis kategori paket kemitraan yang telah dipilih dan ditandatangani.</li>
+                    <li>Bahan berkas logo instansi atau materi iklan digital wajib dikirimkan ke panitia selambat-lambatnya sesuai batas kesepakatan bersama.</li>
+                    <li>Konten materi promosi iklan dilarang mengandung muatan SARA, unsur politik praktis, maupun pelanggaran hukum positif Indonesia.</li>
+                    <li>Panitia pelaksana berkewajiban memberikan Lembar Laporan Pertanggungjawaban (LPJ) beserta arsip dokumentasi setelah seluruh rangkaian acara selesai.</li>
+                </ol>
+
+                <p style="margin-top: 30px;">Demikian proposal permohonan dana dan kemitraan ini kami ajukan dengan sebenar-benarnya. Besar harapan kami agar Bapak/Ibu/Saudara/i sekalian dapat memberikan restu, dukungan moral, maupun bantuan materiil demi kesuksesan bersama perayaan kemerdekaan ini. Semoga segala bentuk partisipasi bernilai ibadah serta mempererat tali persaudaraan rukun tetangga warga Dusun Jatirowo.</p>
+
+                <div class="signature-row" style="margin-top: 40px;">
+                    <div class="signature-box">
+                        <p>Mengetahui,<br>Kepala Dusun Jatirowo</p>
+                        <div class="space-ttd"></div>
+                        <p class="bold">Bpk. Muhammad Sa'i</p>
+                    </div>
+                    <div class="signature-box">
+                        <p>Hormat Kami,<br>Panitia Pelaksana Kegiatan</p>
+                        <div class="space-ttd"></div>
+                        <p class="bold">Rama Dheva</p>
+                        <p style="font-size: 12px; color: #555;">(Ketua Panitia)</p>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 20px;">
+                    <p style="font-size: 13px; color: #777;">Sekretaris: <strong>Syifa' Nurul Q.A / Billa</strong></p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll('.sidebar-menu a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Remove active class from all links
+                document.querySelectorAll('.sidebar-menu a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                
+                // Add active class to clicked link
+                this.classList.add('active');
+                
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if(targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Simple scroll spy to update active menu on scroll
+        window.addEventListener('scroll', () => {
+            let fromTop = window.scrollY + 60;
+            
+            document.querySelectorAll('.sidebar-menu a').forEach(link => {
+                let section = document.querySelector(link.getAttribute('href'));
+                if (
+                    section.offsetTop <= fromTop &&
+                    section.offsetTop + section.offsetHeight > fromTop
+                ) {
+                    document.querySelectorAll('.sidebar-menu a').forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
